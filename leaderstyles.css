@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background: #161623;
+    transition: 1s;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left: 0;
+    padding:2rem 3rem;
+}
+
+header .logo{
+    font-size: 3rem;
+    color:#fff;
+}
+
+header .logo span{
+    color:var(--orange);
+}
+
+#Leaderboard{
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    margin: 20px auto;
+    text-align: center;
+    max-width: 350px;
+    min-height: 350px;
+    padding: 50px 50px;
+    border-radius: 30px;
+    color: #ffffff;
+    transition: 1s;
+
+}
+
+#Name{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+#Points{
+    width: 50%;
+    float: right;
+    height: 100%;
+}
+
+.LBlist{
+    list-style-type: none;
+}
+
+.head{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+
+p{
+    font-size: 40px;
+}
+#Leaderboard hr{
+    width: 100px;
+    height: 3px;
+    margin: 10px auto;
+    border-radius: 60px;
+    background: rgba(0, 0, 0, 0.226);
+}
+
+section{
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: rgb(255, 255, 255);
+	z-index: 1000;
+}
+
+.color{
+    margin: 15px 15px;
+    width: 100px;
+    height: 25px;
+    color: #000;
+    border-radius: 4px;
+}
+.footer p{
+    font-size: small;
+    Color:#FFC0CB;
+    margin-left: 750px;
+    margin-top: 50px;
+}

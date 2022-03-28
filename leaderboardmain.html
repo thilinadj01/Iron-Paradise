@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Leaderboard</title>
+        <link rel="stylesheet" href="leaderstyles.css">
+        <script src="leaderscripts.js"></script>  
+    </head>
+<!-- header section starts  -->
+
+<header>
+
+    <a href="index.html" class="logo"><img src="images/dumblewh.png" width="75px"> </a>
+   
+   
+</header>
+    
+    <body onload="displayXML()">
+        <section>
+            Select background color: <select class="color" onchange="changeBgColor(this)">
+                <option value="#161623">Dark Blue</option>
+                <option value="#FB233F">Red</option>
+                <option value="#1CFF74">Green</option>
+                <option value="#921CFF">Purple</option>
+                <option value="#E9F03D">Yellow</option>
+                <option value="#FF5DDD">Pink</option>
+            </select>
+            Select font color: <select class="color" onchange="changeFontColor(this)">
+                <option value="#ffffff">White</option>
+                <option value="#000000">Black</option>
+                <option value="#FB233F">Red</option>
+                <option value="#1CFF74">Green</option>
+                <option value="#921CFF">Purple</option>
+                <option value="#E9F03D">Yellow</option>
+                <option value="#FF5DDD">Pink</option>
+            </select>
+        </section>
+        <div id="Leaderboard">
+            <p>Leaderboard</p>
+            <hr>
+            <div id ="Name">
+                <ul class="LBlist">
+                    <li class="head">Name</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div id ="Points">
+                <ul class="LBlist">
+                    <li class="head">Points</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+     
+        <div class="footer">
+            <div class="footer-col-2">
+                <a href="Thilina.html">   <p> EDITOR </p></a>
+            </div>
+        </div>
+    </body>
+</html>

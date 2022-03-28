@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width-device-width, initial scale=0.1">
+    
+        <title>ALl products</title>
+        <link rel="stylesheet" href="stly.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    </head>
+<body>
+ 
+  
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">  <img src="images/dumble.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="index.html #About">About</a></li>
+                        <li><a href="index.html #service">Service</a></li>
+                        <li><a href="index.html #trainer">Trainers</a></li>
+                        <li><a href="index.html #plan">Plan</a></li>
+                        <li><a href="index.html #Products">Product</a></li>
+                        <li><a href="GalleryPage.html">Gallery</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                        <li><a href="Newsetter.html">NewsLetter</a></li>
+                        <li><a href="bmi.html">BMI</a></li>
+                        <li><a href="sign.html">Register</a></li>
+                        
+                    </ul>
+                </nav> 
+                <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+    </div>
+
+    
+
+ <!---------------- cart items ----------------->
+
+<div class="small-container">
+<table>
+    <tr>
+    <th>Product</th>
+    <th>Quantity</th>
+    <th>Subtotal</th>
+    </tr>
+<tr>
+
+    <td>
+        <div class="cart-info">
+            <img src="images/t2.jfif">
+            <div>
+                <p>Printed t shirt</p>
+                <small>price: $67.00</small>
+                <br>
+                <a href="">Remove</a>
+            </div>
+        </div>
+    </td>
+    <td> <input type="number" value="1"></td>
+    <td>$67.00</td>
+</tr>
+<tr>
+
+    <td>
+        <div class="cart-info">
+            <img src="images/nike.jpg">
+            <div>
+                <p>Women's PINK NIKE Shoe</p>
+                <small>price: $46.00</small>
+                <br>
+                <a href="">Remove</a>
+            </div>
+        </div>
+    </td>
+    <td> <input type="number" value="1"></td>
+    <td>$46.00</td>
+</tr>
+<tr>
+
+    <td>
+        <div class="cart-info">
+            <img src="images/mass.jpg">
+            <div>
+                <p>Carnivor Mass</p>
+                <small>price: $90.00</small>
+                <br>
+                <a href="">Remove</a>
+            </div>
+        </div>
+    </td>
+    <td> <input type="number" value="1"></td>
+    <td>$90.00</td>
+</tr>
+</table>
+
+<div class="total-price">
+
+    <table>
+        <tr>
+            <td>Subtotal</td>
+            <td>$203.00</td>
+         </tr>
+         <tr>
+            <td>Tax</td>
+            <td>$50.00</td>
+         </tr>
+         <tr>
+            <td>Total</td>
+            <td>$250.00</td>
+         </tr>
+    </table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+    CREATED BY <a href="Navindu.html">EDITOR</a> | all rights reserved.
+</section>
+
+<!-- footer section ends -->
+
+
+ <script>
+    var menuitems = document.getElementById("menuitems")
+    menuitems.style.maxHeight= "0px"
+
+    function menutoggle(){
+        if(   menuitems.style.maxHeight == "0px"){
+            menuitems.style.maxHeight= "200px"
+
+    }
+    
+    else
+    {
+        menuitems.style.maxHeight= "0px"
+    }
+    
+
+</script>
+
+
+</body>
+</html>

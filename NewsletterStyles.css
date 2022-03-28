@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background: #161623;
+    min-height: 100vh;
+    padding: 150px;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    padding:2rem 3rem;
+}
+
+header .logo{
+    font-size: 3rem;
+    color:#fff;
+}
+
+header .logo span{
+    color:var(--orange);
+}
+
+
+
+header.header-active .logo{
+    color:#333;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(30% at right 70%);
+}
+
+section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#f0f);
+    clip-path: circle(30% at 10% 10%);
+}
+
+.newsletter{
+    background: linear-gradient( #2196f3,rgb(248, 99, 248),#63b5f8,#f0f );
+    margin: 0 auto;
+    text-align: center;
+    max-width: 350px;
+    padding: 50px 50px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    color: #000000;
+}
+
+.newsletter hr{
+    width: 100px;
+    height: 3px;
+    margin: 10px auto;
+    border-radius: 60px;
+    background: rgba(0, 0, 0, 0.226);
+
+}
+
+.newsletter input{
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    border: 0px;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 1);
+}
+
+.newsletter button{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    height: 50px;
+    background-color: transparent;
+    color: #fff;
+    padding: 0px 28px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 16px;
+}
+
+.newsletter button:hover{
+    background-color: #161623;
+    border-color: #161623;
+}
+.footer p{
+    width: 50px;
+    Color:#FFC0CB;
+    margin-left: 580px;
+    margin-top: 160px;
+}

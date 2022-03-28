@@ -1,0 +1,95 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Whole Doc*/
+body{
+    background: #000;
+    color: #fff;
+}
+
+.text{
+    text-align: center;	
+    margin: 50px auto;
+	color: #650DF3; 
+}
+.text h1 {
+	font-size: 25px;
+}
+
+.text h2 {
+	font-size: 18px;
+}
+
+/* Container or position of the bar */
+.container{
+    margin: 50px auto;
+    margin-top: 300px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+@keyframes blinker { to { opacity: 0; } }
+
+.text {
+  animation: blinker 5s cubic-bezier(1, 0, 0, 1) infinite alternate;  
+}
+
+/* Progress Bar */
+.progress2{
+    border-radius: 30px;
+    background: #fff;
+}
+/* thickness of the bar */
+.progress-bar2{
+    height: 5px;
+    border-radius: 30px;
+    transition: 0.4s linear;
+    transition-property: width, backgroung-color;
+}
+
+.progress-moved .progress-bar2{
+    background: #cf4707;
+    animation: progress 5s infinite;
+}
+
+/* Animation part */
+@keyframes progress{
+    0%{
+        width: 0%;
+        background: #9B64F4;
+        box-shadow: 0 0 8px #9B64F4;
+    }
+
+    100%{
+        width: 100%;
+        background: #650DF3;
+        box-shadow: 0 0 20px #650DF3;
+    }
+}
+
+/* Icon */
+.icon{
+    color: #650DF3;
+    background-color: transparent;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    animation: icon 5s infinite;
+    
+}
+
+/* Animation */
+@keyframes icon{
+    0%{
+        color: #9B64F4;
+        text-shadow: 0 0 0 #200000;
+    }
+
+    100%{
+        color: #650DF3;
+        text-shadow: 0 0 10px #650DF3;
+    }
+}

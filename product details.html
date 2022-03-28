@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width-device-width, initial scale=0.1">
+    
+        <title>ALl products</title>
+        <link rel="stylesheet" href="stly.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    </head>
+<body>
+ 
+  
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/dumble.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="index.html #About">About</a></li>
+                        <li><a href="index.html #service">Service</a></li>
+                        <li><a href="index.html #trainer">Trainers</a></li>
+                        <li><a href="index.html #plan">Plan</a></li>
+                        <li><a href="index.html #Products">Product</a></li>
+                        <li><a href="GalleryPage.html">Gallery</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                        <li><a href="Newsetter.html">NewsLetter</a></li>
+                        <li><a href="bmi.html">BMI</a></li>
+                        <li><a href="sign.html">Register</a></li>
+                        
+                    </ul>
+                </nav> 
+                <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+    </div>
+
+    <!------- single product details ------->
+
+    <div class="small-container single-product">
+        <div class="row">
+             <div class="col-2">
+                 <img src="images/t1 (1).jfif" width="100%" id="ProductImg">
+                
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/t2.jfif" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/t3.jfif" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/t5.jfif" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/t6.jfif" width="100%" class="small-img">
+                    </div>
+                </div>
+            
+
+
+             </div>
+             <div class="col-2">
+                 <p>Home / T-ekak</p>
+                 <h1>Red</h1>
+                 <h4>$67</h4>
+                 <select>
+                     <option>Select Size</option>
+                     <option>XXL</option>
+                     <option>XL</option>
+                     <option>Large</option>
+                     <option>Medium</option>
+                     <option>Small</option>
+                 </select>
+                 <input type="number" value="1">
+                 <a href="cart.html" class="btn">Add to cart</a>
+                 <h3>Product Details <i class="fa fa-indent"></i></h3>
+                 <br>
+                 <p>cupiri comportable ekak adala balanna.kasanne na harima lassani </p>
+             </div>
+        </div>
+    </div>
+
+
+        <!----------------- title ------------------->
+
+        <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+
+        </div>        
+        </div>
+
+
+
+
+
+
+<!-------------------------- products------------------>
+
+    <div class="small-container">
+         
+      
+        
+        <div class="row">
+            <div class="col-4">
+                <img src="images/mass.jpg">
+                <h4>Carnivor Mass</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i> 
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$90.00</p>
+             </div>
+             <div class="col-4">
+                <img src="images/nike.jpg">
+                <h4>Women's PINK NIKE Shoe</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i> 
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$46,00</p>
+             </div>
+             <div class="col-4">
+                <img src="images/bike2.jpg">
+                <h4>Exercise Bike</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i> 
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>675.00</p>
+             </div>
+             <div class="col-4">
+                <img src="images/supply.jpg">
+                <h4>Mass Tech Protein</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i> 
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$118.00</p>
+             </div>
+        </div>
+
+   
+
+    </div>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+    CREATED BY<a href="Navindu.html">EDITOR</a> | all rights reserved.
+</section>
+
+<!-- footer section ends -->
+
+
+<!---- js for product gal-->
+
+
+<script>
+    var ProductImg = document.getElementById("ProductImg")
+    var smalling = document.getElementsByClassName("small-img")
+   
+    smalling[0].onclick = function()
+    {
+        ProductImg.src = smalling[0].src;
+    }
+    smalling[1].onclick = function()
+    {
+        ProductImg.src = smalling[1].src;
+    }
+    smalling[2].onclick = function()
+    {
+        ProductImg.src = smalling[2].src;
+    }
+    smalling[3].onclick = function()
+    {
+        ProductImg.src = smalling[3].src;
+    }
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

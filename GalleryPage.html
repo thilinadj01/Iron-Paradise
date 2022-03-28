@@ -1,0 +1,122 @@
+!<DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider | With Manual Buttons and Autoplay Navigation Visibility</title>
+    <link rel="stylesheet" href="GalleryPageStyle.css">
+ </head>
+ <header>
+    <a href="index.html" class="logo"><img src="images/dumblewh.png" width="75px"></a>
+</header>
+<body>
+<section>
+    <div class="img-slider">
+      <div class="slide active">
+        <img src="1.jpg" alt="">
+        <div class="info">
+          <h2>Yoga</h2>
+          <p>Yoga's incorporation of meditation and breathing can help improve a person's mental well-being. “Regular yoga practice creates mental clarity and calmness; increases body awareness; relieves chronic stress patterns; relaxes the mind; centers attention; and sharpens concentration</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="2.jpg" alt="">
+        <div class="info">
+          <h2>Music And Health</h2>
+          <p>Research has shown that blood flows more easily when music is played. It can also reduce heart rate, lower blood pressure, decrease cortisol (stress hormone) levels and increase serotonin and endorphin levels in the blood. It elevates mood. Music can boost the brain's production of the hormone dopamine.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="3.jpg" alt="">
+        <div class="info">
+          <h2>Gym And Health</h2>
+          <p>Joining a gym might by one of the best investments you can make for your health: People with gym memberships exercise more and have better measures of heart health than those who don’t belong to a health club, new research from Iowa State University shows. </p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="4.jpg" alt="">
+        <div class="info">
+          <h2>Affects Of Smoking</h2>
+          <p>Smoking causes cancer, heart disease, stroke, lung diseases, diabetes, and chronic obstructive pulmonary disease (COPD), which includes emphysema and chronic bronchitis. Smoking also increases risk for tuberculosis, certain eye diseases, and problems of the immune system, including rheumatoid arthritis.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="5.jpg" alt="">
+        <div class="info">
+          <h2>Benefits Of Whey Proteins</h2>
+          <p>Whey protein is an exceptionally healthy way to add more protein to your diet. It's a quality protein source that is absorbed and utilized efficiently by the human body. This is particularly important for athletes, bodybuilders or people who need to gain muscle mass and strength while losing fat.</p>
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.btn');
+    let currentSlide = 1;
+
+    // Javascript for image slider manual navigation
+    var manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+
+        btns.forEach((btn) => {
+          btn.classList.remove('active');
+        });
+      });
+
+      slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+      });
+    });
+
+    // Javascript for image slider autoplay navigation
+    var repeat = function(activeClass){
+      let active = document.getElementsByClassName('active');
+      let i = 1;
+
+      var repeater = () => {
+        setTimeout(function(){
+          [...active].forEach((activeSlide) => {
+            activeSlide.classList.remove('active');
+          });
+
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 10000);
+      }
+      repeater();
+    }
+    repeat();
+    </script>
+<div class="footer">
+  <div class="footer-col-2">
+      <a href="Nevidu.html">   <p> EDITOR </p></a>
+  </div>
+</body>
+
+  </section>
+  
+</html>
+      
